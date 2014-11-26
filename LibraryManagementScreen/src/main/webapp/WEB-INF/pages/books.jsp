@@ -13,13 +13,13 @@
 
     <link rel='stylesheet' type='text/css' media='screen' href='<c:url value="/resources/css/style.css"/>'/>
     <link rel='stylesheet' type='text/css' media='screen' href='<c:url value="/resources/css/css/font-awesome.css"/>'/>
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="http://www.google.com/recaptcha/api/js/recaptcha_ajax.js"></script>
+    <%--<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>--%>
+    <script type="text/javascript" src="<c:url value="/resources/js/lib/ajax/recaptcha_ajax.js"/>"></script>
 
-    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script data-require="angular.js@*" data-semver="1.2.13" src="http://code.angularjs.org/1.2.13/angular.js"></script>
-    <script data-require="angular-animate@*" data-semver="1.2.13" src="http://code.angularjs.org/1.2.13/angular-animate.js"></script>
+    <script src='<c:url value="/resources/js/lib/jquery/jquery-1.11.0.min.js"/>'></script>
+    <script src='<c:url value="/resources/js/lib/jquery/jquery-migrate-1.2.1.min.js"/>'></script>
+    <script data-require="angular.js@*" data-semver="1.2.13" src="<c:url value="/resources/js/angular.min.js"/>"></script>
+    <script data-require="angular-animate@*" data-semver="1.2.13" src="<c:url value="/resources/js/angular-animate.min.js"/>"></script>
     <script type='text/javascript' src='<c:url value="/resources/js/app.js"/>'></script>
 
     <script type='text/javascript'>
