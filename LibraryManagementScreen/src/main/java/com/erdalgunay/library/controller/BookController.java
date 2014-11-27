@@ -55,8 +55,13 @@ public class BookController {
         if(bookModel.isNotValid()) {
             return "failSave";
         }
+        try {
+            bookService.save(bookModel.createBook());
+        }
+        catch (Exception e){
+            return "failSave";
+        }
 
-        bookService.save(bookModel.createBook());
 
         return "successSave";
     }
